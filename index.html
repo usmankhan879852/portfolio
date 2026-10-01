@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Usman Imran | Web Developer</title>
+<meta name="description" content="Portfolio of Usman Imran, an aspiring web developer from Karachi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">Usman Imran</a>
+  <nav>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" aria-label="Switch light or dark theme">Theme</button>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="hello">Hi, I'm</p>
+    <h1>Usman Imran</h1>
+    <p class="role">Aspiring web developer building responsive sites with HTML, CSS, JavaScript, PHP and Laravel.</p>
+    <p class="status">Open to a web developer internship</p>
+    <div class="cta">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn" href="#projects">See my projects</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="images/usman.png" alt="Portrait of Usman Imran" width="1000" height="885">
+  </div>
+</section>
+
+<section id="about" class="wrap">
+  <h2>About me</h2>
+  <p class="lead">I'm studying for a Diploma in Artificial Intelligence at Aptech in Karachi, and I build web applications on the side. I want to join a team where I can ship real features, learn professional development practices, and keep improving.</p>
+  <p>I enjoy coding personal projects, exploring new web technologies and learning from documentation and online tutorials. I speak Urdu natively and work comfortably in English.</p>
+</section>
+
+<section id="skills" class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Frontend</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul></div>
+    <div><h3>Backend</h3><ul><li>PHP</li><li>Laravel</li><li>C#</li></ul></div>
+    <div><h3>Databases</h3><ul><li>SQL</li><li>MySQL</li></ul></div>
+    <div><h3>Tools</h3><ul><li>Git</li><li>GitHub</li><li>VS Code</li></ul></div>
+  </div>
+</section>
+
+<section id="projects" class="wrap">
+  <h2>Projects</h2>
+  <article class="project">
+    <h3>Personal Portfolio Website</h3>
+    <p class="stack">HTML, CSS, JavaScript</p>
+    <p>A responsive site that presents my skills and projects, with a mobile-first layout, smooth scrolling and a contact form.</p>
+  </article>
+  <article class="project">
+    <h3>Student Management System</h3>
+    <p class="stack">PHP, MySQL</p>
+    <p>A CRUD application to add, update and delete student records, backed by a normalized database with input validation.</p>
+  </article>
+  <article class="project">
+    <h3>Laravel Mini Blog</h3>
+    <p class="stack">Laravel, MySQL</p>
+    <p>A blog with user authentication, post creation and comments, built with MVC architecture and Blade templating.</p>
+  </article>
+</section>
+
+<section id="education" class="wrap">
+  <h2>Education</h2>
+  <ul class="timeline">
+    <li><strong>Diploma in Artificial Intelligence</strong><span>Aptech, Karachi. Ongoing</span></li>
+    <li><strong>Matriculation (Secondary School Certificate)</strong><span>Glammar Children Secondary School, Karachi. 2025</span></li>
+  </ul>
+</section>
+
+<section id="contact" class="wrap">
+  <h2>Contact</h2>
+  <p class="lead">Have an internship or project in mind? Send me a message.</p>
+  <div class="contact">
+    <div class="info">
+      <p><strong>Email</strong><br><a href="mailto:usmankhan879852@gmail.com">usmankhan879852@gmail.com</a></p>
+      <p><strong>Phone</strong><br><a href="tel:+923323048093">+92 332 3048093</a></p>
+      <p><strong>Location</strong><br>Karachi, Pakistan</p>
+    </div>
+    <div class="form" id="contact-form">
+      <label>Your name<input id="name" type="text" autocomplete="name"></label>
+      <label>Your email<input id="email" type="email" autocomplete="email"></label>
+      <label>Message<textarea id="message" rows="5"></textarea></label>
+      <button class="btn primary" id="send" type="button">Send message</button>
+      <p id="note" role="status"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Usman Imran</footer>
+<script src="script.js"></script>
+</body>
+</html>
